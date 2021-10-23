@@ -1,0 +1,151 @@
+.Crypto-coin {
+  display: flex;
+  width: 80vw;
+  align-items: center;
+  color: white;
+  background: #000c18;
+  border-bottom: 1px solid #1f233d;
+}
+.nameSymbol {
+  display: flex;
+  width: 34%;
+  justify-content: space-evenly;
+}
+.nameSymbol h3 {
+  font-family: "Poppins", sans-serif;
+  width: 40%;
+  text-align: left;
+  /* border: 1px solid #1f233d; */
+}
+
+.Crypto-coin p {
+  display: flex;
+}
+.Crypto-coin img {
+  width: 4%;
+  margin: 15px 0.5% 15px 3%;
+}
+
+.Crypto-coin-symbol {
+  font-family: "Poppins", sans-serif;
+
+  text-transform: uppercase;
+  /* border: 1px solid #1f233d; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.priceAndPriceChange {
+  font-family: "Poppins", sans-serif;
+
+  display: flex;
+  width: 28%;
+  justify-content: space-evenly;
+}
+.Crypto-coin-price {
+  width: 45%;
+  /* border: 1px solid #1f233d; */
+}
+.Crypto-coin-priceChange {
+  width: 55%;
+  /* border: 1px solid #1f233d; */
+}
+.volumeAndMarketCap {
+  width: 30%;
+  display: flex;
+  /* border: 1px solid grey; */
+  justify-content: space-between;
+}
+.Crypto-coin-volume {
+  /* display: flex; */
+  /* border: 1px solid #1f233d; */
+}
+
+.Crypto-coin-market_cap {
+  /* border: 1px solid #1f233d; */
+}
+
+.green {
+  color: rgb(25, 177, 25);
+}
+.red {
+  color: red;
+}
+
+@media (max-width: 750px) {
+  .Crypto-coin {
+    width: 85vw;
+    height: 12vh;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-bottom: 1px solid grey;
+    padding: 0;
+  }
+  .Crypto-coin img {
+    width: 10%;
+    margin: 5px;
+  }
+  .nameSymbol {
+    height: 50%;
+    /* height: ; */
+    width: 180vw;
+    flex-direction: column;
+    /* border: 1px solid grey; */
+    padding: 15px 0 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nameSymbol h3 {
+    width: 100%;
+    /* text-align: left; */
+    /* border: 1px solid #1f233d; */
+    /* padding-left: 10px; */
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .Crypto-coin-symbol {
+    width: 100%;
+    /* border: 1px solid #1f233d; */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .priceAndPriceChange {
+    width: 80vw;
+    height: 10vh;
+    flex-direction: column;
+    padding-left: 10vw;
+    margin: 0;
+    /* border: 1px solid grey; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .Crypto-coin-price {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 0;
+    margin: 0;
+  }
+  .Crypto-coin-priceChange {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 0;
+    margin: 0;
+  }
+
+  .Crypto-coin-volume {
+    display: none !important;
+  }
+  .Crypto-coin-market_cap {
+    display: none !important;
+  }
+}

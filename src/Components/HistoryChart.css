@@ -1,0 +1,134 @@
+.historyChart {
+  height: 90vh;
+  background: #000c18;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  width: 50%;
+}
+.chartdiv {
+  height: 50vh;
+  width: 80%;
+  border: 2px solid grey;
+}
+.button {
+  margin-top: 30px;
+  width: 25%;
+  background-color: orange;
+  border: none;
+  border-radius: 5px;
+  height: 35px;
+  color: #000c18;
+  font-size: 20px;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+button:active {
+  background-color: grey;
+  color: black;
+}
+.inner {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.priceAndchange {
+  width: 40vw;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.priceChange {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  /* width: 100%; */
+}
+
+.text-danger {
+  color: red;
+}
+.text-success {
+  color: rgb(42, 170, 42);
+}
+.Market_stats {
+  color: white;
+}
+.back {
+  width: 90vw;
+  /* border: 1px solid grey; */
+}
+.backinside {
+  background-color: hsl(0, 0%, 100%);
+  width: 10%;
+  height: 25px;
+  text-align: center;
+  color: black;
+}
+/* .backinside:hover {
+  background-color: black;
+  color: white;
+} */
+@media (max-width: 700px) {
+  .historyChart {
+    height: 100%;
+    width: 100%;
+  }
+  .back {
+    margin-bottom: 20px;
+  }
+  .backinside {
+    border: 2px solid rgba(255, 255, 255, 0.274);
+    border-radius: 9px;
+    background-color: rgba(255, 255, 255, 0.103);
+    width: 20vw;
+    outline: none;
+    color: white;
+  }
+  /* .backinside:hover {
+    background-color: black;
+    color: white;
+  } */
+  .historyChart {
+    margin-top: 20px;
+  }
+  .chartdiv {
+    height: 40vh;
+    border-radius: 16px;
+    width: 90%;
+  }
+  canvas {
+    height: 40vh;
+    border-radius: 16px;
+  }
+  .priceAndchange {
+    width: 75vw;
+    /* object-fit: contain; */
+    padding: 0 30px;
+    margin-bottom: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.274);
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.103);
+  }
+  .priceChange {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .inner {
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+  }
+  .button {
+    background-color: rgba(255, 255, 255, 0.185);
+    border: 1px solid rgba(255, 255, 255, 0.274);
+    color: white;
+    width: 31%;
+  }
+}

@@ -1,0 +1,17 @@
+.coinlist {
+  background-color: #000c18;
+  display: flex;
+}
+.memegenerator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000c18;
+  width: 100%;
+  height: 90vh;
+}
+@media (max-width: 700px) {
+  .coinlist {
+    display: block;
+  }
+}

@@ -1,0 +1,8 @@
+.Losers {
+  color: white;
+}
+@media (max-width: 700px) {
+  .Losers {
+    margin-bottom: 50px;
+  }
+}

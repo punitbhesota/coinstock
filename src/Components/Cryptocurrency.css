@@ -1,0 +1,149 @@
+.cryptocurrency {
+  min-height: 100vh;
+  background: #000c18;
+  color: white;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  object-fit: contain;
+  /* border: 2px solid red; */
+}
+.crypto-coin-search input {
+  background: #000c18;
+  color: white;
+  outline: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  border-bottom: 1px solid #3c5874;
+  text-align: center;
+}
+.crypto-coin-search {
+  margin: 30px 0 20px 0px;
+}
+
+.Crypto-Page-Nav {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.innerNav {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+  width: 60%;
+  margin: 15px 0 30px 0;
+}
+.headers {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  color: rgba(255, 255, 255, 0.596);
+}
+.allAssets {
+  cursor: pointer;
+  color: white;
+}
+.AllCrypto {
+  color: white;
+}
+.navGainers {
+  cursor: pointer;
+  color: rgb(52, 184, 52);
+}
+.navLosers {
+  cursor: pointer;
+  color: red;
+}
+.navWatchlists {
+  cursor: pointer;
+  color: white;
+}
+
+.Name {
+  width: 65px;
+  text-align: center;
+}
+.oneCrypto {
+  display: flex;
+}
+.addtowatchbg {
+  background-color: rgba(0, 0, 255, 0);
+  height: 35px;
+}
+.addToWatchlist {
+  background-color: rgba(0, 0, 255, 0);
+  border: none;
+  /* margin-left: -20px; */
+  color: white;
+  height: 60px;
+  margin-top: 5px;
+  z-index: 1;
+}
+
+.memegenerator {
+  width: 50%;
+  height: 50%;
+}
+.crypto-main {
+  margin-left: 20px;
+  /* width: 90%; */
+}
+.innerNavForMobile {
+  font-family: "Roboto", sans-serif;
+  display: none;
+  position: fixed;
+  bottom: 0;
+  background-color: rgb(0, 0, 0);
+  /* filter: blur(8px);
+  -webkit-filter: blur(8px); */
+  z-index: 30;
+  height: 7vh;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-size: 18px;
+  box-sizing: border-box;
+  margin-bottom: -1px;
+}
+@media (max-width: 750px) {
+  .headers {
+    display: none;
+  }
+  .innernavi {
+    display: none;
+  }
+  .innerNavForMobile {
+    display: flex;
+    /* border-radius: 17px; */
+    /* color: white; */
+  }
+  .innerNavPointers {
+    color: white;
+  }
+  .addtowatchbg {
+    height: 30px;
+  }
+  .addToWatchlist {
+    background-color: rgba(0, 0, 255, 0);
+    border: none;
+    /* margin-left: -20px; */
+    color: white;
+    height: 60px;
+    margin-top: 20px;
+    z-index: 1;
+  }
+  .crypto-coin-search {
+    margin: 10px;
+    /* display: flex;
+    justify-content: center; */
+  }
+}

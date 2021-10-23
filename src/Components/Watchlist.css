@@ -1,0 +1,31 @@
+.memegenerator img {
+  width: 450px;
+  height: 300px;
+}
+.memegenerator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.deleteToWatchlist {
+  border: none;
+  background: none;
+  /* margin-left: -20px; */
+}
+.deleteToWatchlist img {
+  height: 30px;
+}
+.watchlist-crypto {
+  margin-left: 40px;
+}
+@media (max-width: 770px) {
+  .watchlist-crypto {
+    margin-left: -1px;
+  }
+  .deleteToWatchlist img {
+    height: 25px;
+  }
+  .Watchlist {
+    margin-bottom: 50px;
+  }
+}

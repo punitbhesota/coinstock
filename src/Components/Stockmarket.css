@@ -1,0 +1,18 @@
+.Stockmarket {
+  height: 100vh;
+  background-color: #000c18;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Memegenerator {
+  width: 50vw;
+  height: 70vh;
+}
+@media (max-width: 750px) {
+  .Memegenerator {
+    height: 40vh;
+    width: 80vw;
+  }
+}

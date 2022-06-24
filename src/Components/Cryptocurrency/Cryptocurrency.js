@@ -2,15 +2,14 @@ import React, { useState, useEffect, useContext } from "react";
 import { Switch, Route, Link, useRouteMatch } from "react-router-dom";
 import axios from "axios";
 import "./Cryptocurrency.css";
-import Crypto from "./Crypto";
-import Gainers from "./Gainers";
-import Losers from "./Losers";
-import { WatchListContext } from "./WatchListContext";
-import Watchlist from "./Watchlist";
+import Crypto from "../Crypto/Crypto";
+import Gainers from "../Gainers/Gainers";
+import Losers from "../Losers/Losers";
+import { WatchListContext } from "../Watchlist/WatchListContext";
+import Watchlist from "../Watchlist/Watchlist";
 import { useAlert } from "react-alert";
-// import Catloading from "./catloading.jpg";
-import Catloading2 from "./cover4.jpg";
-import AddCoinIcon from "./AddCoinIcon.png";
+import Catloading2 from "../cover4.jpg";
+import AddCoinIcon from "../AddCoinIcon.png";
 
 function Cryptocurrency() {
   const { path, url } = useRouteMatch();

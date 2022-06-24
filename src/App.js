@@ -1,10 +1,10 @@
 import "./App.css";
-import Cryptocurrency from "./Components/Cryptocurrency";
-import Stockmarket from "./Components/Stockmarket";
-import Navigation from "./Components/Navigation";
+import Cryptocurrency from "./Components/Cryptocurrency/Cryptocurrency";
+import Stockmarket from "./Components/StockMarket/Stockmarket";
+import Navigation from "./Components/Navigation/Navigation";
 import { Switch, Route } from "react-router-dom";
-import Home from "./Components/Home";
-import CoinDetailPage from "./Components/CoinDetailPage";
+import Home from "./Components/Home/Home";
+import CoinDetailPage from "./Components/CoinDetailPage/CoinDetailPage";
 
 function App() {
   return (

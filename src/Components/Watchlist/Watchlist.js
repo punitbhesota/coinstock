@@ -1,11 +1,10 @@
 import React, { useEffect, useState, useContext } from "react";
-import Crypto from "./Crypto";
+import Crypto from "../Crypto/Crypto";
 import { WatchListContext } from "./WatchListContext";
-import coinGecko from "./coinGecko";
+import coinGecko from "../coinGecko";
 import { useAlert } from "react-alert";
-// import Catloading from "./catloading.jpg";
-import Catloading2 from "./cover4.jpg";
-import DeleteIcon from "./deleteIcon.png";
+import Catloading2 from "../cover4.jpg";
+import DeleteIcon from "../deleteIcon.png";
 
 import "./Watchlist.css";
 

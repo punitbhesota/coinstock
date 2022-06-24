@@ -1,7 +1,7 @@
 import React from "react";
 import "./Navigation.css";
 import { Link } from "react-router-dom";
-import Hamburger from "./hamburger-white.png";
+import Hamburger from "../hamburger-white.png";
 function Navigation() {
   const NavStyle = {
     color: "white",

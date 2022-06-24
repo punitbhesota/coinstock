@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import { Chart } from "chart.js";
-import { historyOptions } from "./ChartConfigs";
+import { historyOptions } from "../ChartConfigs";
 import "./HistoryChart.css";
 import { Link } from "react-router-dom";
 

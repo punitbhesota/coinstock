@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import HistoryChart from "./HistoryChart";
-import CoinData from "./CoinData";
-import coinGecko from "./coinGecko";
-import Catloading2 from "./doublecat.jpg";
+import HistoryChart from "../HistoryChart/HistoryChart";
+import CoinData from "../CoinData/CoinData";
+import coinGecko from "../coinGecko";
+import Catloading2 from "../doublecat.jpg";
 import "./CoinDetailPage.css";
 
 const CoinDetailPage = () => {
@@ -61,7 +61,7 @@ const CoinDetailPage = () => {
     };
 
     fetchData();
-  }, []);
+  }, [id]);
 
   const renderData = () => {
     if (isLoading) {

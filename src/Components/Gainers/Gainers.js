@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./Gainers.css";
-import Crypto from "./Crypto";
+import Crypto from "../Crypto/Crypto";
 function Gainers() {
   const [coins, setCoins] = useState([]);
 

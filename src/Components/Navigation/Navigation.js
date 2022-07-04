@@ -1,10 +1,9 @@
 import React from "react";
 import "./Navigation.css";
 import { Link } from "react-router-dom";
-import Hamburger from "../hamburger-white.png";
 function Navigation() {
   const NavStyle = {
-    color: "white",
+    color: "orange",
     textDecoration: "None",
   };
 
@@ -20,7 +19,7 @@ function Navigation() {
     <div className="navigation">
       <div className="navigation2">
         <Link className="logo" to="/" style={NavStyle}>
-          <div className="logo">THECOINSTOCK</div>
+          THECOINSTOCK
         </Link>
 
         <div className="navlinks">
@@ -32,15 +31,15 @@ function Navigation() {
           </Link>
         </div>
         <div onClick={openNav} className="navbutton">
-          <img src={Hamburger} alt="open" />
+          <img src="../hamburger-white.png" alt="open" />
         </div>
       </div>
       <div className="navformobile">
-        <Link onClick={openNav} to="Cryptocurrency" style={NavStyle}>
-          <div className="navcryptocurrency ">Cryptocurrency</div>
+        <Link onClick={openNav} to="/Cryptocurrency" style={NavStyle}>
+          <div className="mobnavcryptocurrency">Cryptocurrency</div>
         </Link>
-        <Link onClick={openNav} to="Stockmarket" style={NavStyle}>
-          <div className="navstockmarket ">Stock Market</div>
+        <Link onClick={openNav} to="/Stockmarket" style={NavStyle}>
+          <div className="mobnavstockmarket ">Stock Market</div>
         </Link>
       </div>
     </div>

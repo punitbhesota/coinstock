@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import HistoryChart from "../HistoryChart/HistoryChart";
-import CoinData from "../CoinData/CoinData";
-import coinGecko from "../coinGecko";
-import Catloading2 from "../doublecat.jpg";
+import HistoryChart from "../../Components/HistoryChart/HistoryChart";
+import CoinData from "../../Components/CoinData/CoinData";
+import coinGecko from "../../Components/coinGecko";
 import "./CoinDetailPage.css";
 
 const CoinDetailPage = () => {
@@ -67,7 +66,7 @@ const CoinDetailPage = () => {
     if (isLoading) {
       return (
         <div className="memegenerator">
-          <img src={Catloading2} alt="LOADING..." />
+          <img src="../doublecat.jpg" alt="LOADING..." />
         </div>
       );
     }

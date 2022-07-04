@@ -1,10 +1,8 @@
 import React, { useEffect, useState, useContext } from "react";
-import Crypto from "../Crypto/Crypto";
+import Crypto from "../../Components/Crypto/Crypto";
 import { WatchListContext } from "./WatchListContext";
-import coinGecko from "../coinGecko";
+import coinGecko from "../../Components/coinGecko";
 import { useAlert } from "react-alert";
-import Catloading2 from "../cover4.jpg";
-import DeleteIcon from "../deleteIcon.png";
 
 import "./Watchlist.css";
 
@@ -43,11 +41,10 @@ function Watchlist() {
   }, [watchlist]);
 
   const renderCoins = () => {
-    // const memegenerator = [{ Catloading }, { Catloading2 }, { DoubleCat }];
     if (isLoading) {
       return (
         <div className="memegenerator">
-          <img src={Catloading2} alt="LOADING..." />
+          <img src="../cover4.jpg" alt="LOADING..." />
         </div>
       );
     }
@@ -74,7 +71,7 @@ function Watchlist() {
                   onClick={() => handleDeleteClick(coin.id)}
                   className="deleteToWatchlist"
                 >
-                  <img src={DeleteIcon} alt="delete" />
+                  <img src="../deleteIcon.png" alt="delete" />
                 </button>
               </div>
             );

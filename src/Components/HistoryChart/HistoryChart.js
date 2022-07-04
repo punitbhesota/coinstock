@@ -1,8 +1,8 @@
 import React, { useRef, useEffect, useState } from "react";
-import { Chart } from "chart.js";
-import { historyOptions } from "../ChartConfigs";
 import "./HistoryChart.css";
+import { Chart } from "chart.js";
 import { Link } from "react-router-dom";
+import { historyOptions } from "./ChartConfigs";
 
 const HistoryChart = ({ data }) => {
   const chartRef = useRef();
@@ -28,6 +28,7 @@ const HistoryChart = ({ data }) => {
   useEffect(() => {
     if (chartRef && chartRef.current && detail) {
       console.log("yeah");
+      // eslint-disable-next-line no-unused-vars
       const chartInstance = new Chart(chartRef.current, {
         type: "line",
         data: {

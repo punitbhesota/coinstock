@@ -1,16 +1,5 @@
-import React from "react";
-import "./Home.css";
-import Particles from "react-particles-js";
-import { Link } from "react-router-dom";
-
-const navStyles = {
-  textDecoration: "None",
-  zIndex: 300,
-};
-function Home() {
-  return (
-    <div className="Home">
-      <div>
+{
+  /* <div>
         <Particles
           className="backspacebg"
           params={{
@@ -114,22 +103,5 @@ function Home() {
             },
           }}
         />
-      </div>
-      <div className="headings">
-        <div className="div1">Interested in </div>
-        <div className="cryptodiv">Cryptocurrencies</div>
-        <div className="div3">&amp;</div>
-        <div className="div4">Stock Market</div>
-        <div className="div5">We have got you covered</div>
-        <div className="div6">
-          Track prices of your favorite cryptocurrencies and stocks here....
-        </div>
-      </div>
-      <Link to="/Cryptocurrency" style={navStyles}>
-        <button className="clickhere">Click Here</button>
-      </Link>
-    </div>
-  );
+      </div> */
 }
-
-export default Home;

@@ -2,14 +2,12 @@ import React, { useState, useEffect, useContext } from "react";
 import { Switch, Route, Link, useRouteMatch } from "react-router-dom";
 import axios from "axios";
 import "./Cryptocurrency.css";
-import Crypto from "../Crypto/Crypto";
+import Crypto from "../../Components/Crypto/Crypto";
 import Gainers from "../Gainers/Gainers";
 import Losers from "../Losers/Losers";
 import { WatchListContext } from "../Watchlist/WatchListContext";
 import Watchlist from "../Watchlist/Watchlist";
 import { useAlert } from "react-alert";
-import Catloading2 from "../cover4.jpg";
-import AddCoinIcon from "../AddCoinIcon.png";
 
 function Cryptocurrency() {
   const { path, url } = useRouteMatch();
@@ -19,12 +17,12 @@ function Cryptocurrency() {
   const { addCoin } = useContext(WatchListContext);
   const alert = useAlert();
 
-  const Changehandler = (e) => {
-    setSearch(e.target.value);
-  };
   const NavStyle = {
     textDecoration: "None",
     color: "black",
+  };
+  const Changehandler = (e) => {
+    setSearch(e.target.value);
   };
 
   useEffect(() => {
@@ -61,10 +59,9 @@ function Cryptocurrency() {
   };
   const renderCoins = () => {
     if (isLoading) {
-      // const memegenerator = ["catloading.jpg", "cover4.jpg", "doublecat.jpg"];
       return (
         <>
-          <img className="memegenerator" src={Catloading2} alt="loading" />
+          <img className="memegenerator" src="../cover4.jpg" alt="loading" />
         </>
       );
     }
@@ -91,7 +88,11 @@ function Cryptocurrency() {
                 onClick={() => handleAddClick(coin.id)}
                 className="addToWatchlist"
               >
-                <img className="addtowatchbg" src={AddCoinIcon} alt="Add" />
+                <img
+                  className="addtowatchbg"
+                  src="../AddCoinIcon.png"
+                  alt="Add"
+                />
               </button>
             </div>
           );
@@ -114,16 +115,16 @@ function Cryptocurrency() {
               </form>
             </div>
 
-            <Link to={`${url}`} smooth={true} style={NavStyle}>
+            <Link to={`${url}`} style={NavStyle}>
               <div className="innernavi AllCrypto">All Assets</div>
             </Link>
-            <Link to={`${url}/Watchlist`} smooth={true} style={NavStyle}>
+            <Link to={`${url}/Watchlist`} style={NavStyle}>
               <div className="innernavi navWatchlists">Watchlist</div>
             </Link>
-            <Link to={`${url}/Gainers`} smooth={true} style={NavStyle}>
+            <Link to={`${url}/Gainers`} style={NavStyle}>
               <div className="innernavi navGainers">Top Gainers</div>
             </Link>
-            <Link to={`${url}/Losers`} smooth={true} style={NavStyle}>
+            <Link to={`${url}/Losers`} style={NavStyle}>
               <div className="innernavi navLosers">Top Losers</div>
             </Link>
           </div>

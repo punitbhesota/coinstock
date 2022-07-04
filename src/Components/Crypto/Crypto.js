@@ -17,6 +17,27 @@ function Crypto({
   return (
     <Link to={`/coins/${idname}`} style={NavStyle}>
       <div className="Crypto-coin">
+        {/* <table className="crypto-coin-table">
+          <tr key={idname}>
+            <td className="C-logo">
+              <img className="crypto-logo" src={image} alt="crypto" />
+            </td>
+            <td className="C-name">{name}</td>
+            <td className="C-symbol">{symbol}</td>
+            <td className="C-price">{price}</td>
+            {priceChange < 0 ? (
+              <td className="C-priceChange Crypto-coin-priceChange red">
+                &nbsp;&nbsp;&nbsp;{priceChange.toFixed(2)}%
+              </td>
+            ) : (
+              <td className="C-priceChange Crypto-coin-priceChange green">
+                &nbsp;&nbsp;&nbsp;&nbsp;{priceChange.toFixed(2)}%
+              </td>
+            )}
+            <td className="C-volume">{volume.toLocaleString()}</td>
+            <td className="C-market-cap">₹{market_cap.toLocaleString()}</td>
+          </tr>
+        </table> */}
         <img src={image} alt="crypto" />
         <div className="nameSymbol">
           <h3 className="Crypto-coin-name">&nbsp;&nbsp;&nbsp;{name}</h3>

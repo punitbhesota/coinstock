@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import "./Losers.css";
-import Crypto from "../Crypto/Crypto";
-function Losers() {
+import "./Gainers.css";
+import Crypto from "../../Components/Crypto/Crypto";
+
+function Gainers() {
   const [coins, setCoins] = useState([]);
 
   useEffect(() => {
@@ -17,14 +18,11 @@ function Losers() {
   }, []);
 
   const compare = (a, b) => {
-    if (a.price_change_percentage_24h < b.price_change_percentage_24h) {
-      return -1;
-    } else {
-      return 1;
-    }
+    return b.price_change_percentage_24h - a.price_change_percentage_24h;
   };
+
   return (
-    <div className="Losers">
+    <div className="Gainers">
       {coins
         .sort(compare)
         .slice(0, 10)
@@ -47,4 +45,4 @@ function Losers() {
   );
 }
 
-export default Losers;
+export default Gainers;

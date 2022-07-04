@@ -1,21 +1,25 @@
 import "./App.css";
-import Cryptocurrency from "./Components/Cryptocurrency/Cryptocurrency";
+import Cryptocurrency from "./Pages/Cryptocurrency/Cryptocurrency";
 import Stockmarket from "./Components/StockMarket/Stockmarket";
 import Navigation from "./Components/Navigation/Navigation";
 import { Switch, Route } from "react-router-dom";
-import Home from "./Components/Home/Home";
-import CoinDetailPage from "./Components/CoinDetailPage/CoinDetailPage";
+import Home from "./Pages/Home/Home";
+import CoinDetailPage from "./Pages/CoinDetailPage/CoinDetailPage";
+import Second from "./Pages/Second/Second";
 
 function App() {
   return (
     <div className="App">
       <Navigation />
       <Switch>
-        <Route exact path="/" component={Home} />
+        <Route exact path="/">
+          <Home />
+          <Second />
+        </Route>
+
         <Route path="/Cryptocurrency" component={Cryptocurrency} />
         <Route path="/Stockmarket" component={Stockmarket} />
         <Route path="/coins/:id" component={CoinDetailPage} />
-        {/* <Route exact path="*" status={404} component={NotFound}/> */}
       </Switch>
     </div>
   );
